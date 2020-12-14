@@ -1,0 +1,15 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.WindowsSDK.targets(46,5): error MSB8036: The Windows SDK version 8.1 was not found. Install the required version of Windows SDK or change the SDK version in the project property pages or by right-clicking the solution and selecting "Retarget solution".
+
+Project Performance Summary:
+       16 ms  D:\game engine\Hazel\Hazel\vendor\imgui\examples\example_glfw_opengl3\example_glfw_opengl3.vcxproj   1 calls
+                 16 ms  ClCompile                                  1 calls
+
+Target Performance Summary:
+        0 ms  SetBuildDefaultEnvironmentVariables        1 calls
+        0 ms  _PrepareForReferenceResolution             1 calls
+        0 ms  GetResolvedWinMD                           1 calls
+       16 ms  _CheckWindowsSDKInstalled                  1 calls
+
+Task Performance Summary:
+        0 ms  SetEnv                                     4 calls
+       16 ms  VCMessage                                  1 calls

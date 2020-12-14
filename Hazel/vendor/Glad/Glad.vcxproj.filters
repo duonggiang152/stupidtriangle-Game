@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{89AF369E-F58E-B539-FEA6-40106A051C9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\glad">
+      <UniqueIdentifier>{30A0DB69-1C03-6B0E-C588-A3C4B1CA3691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inlcude">
+      <UniqueIdentifier>{A99CD49E-157C-533A-1E94-DE108AF2B99B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inlcude\glad">
+      <UniqueIdentifier>{50C1DA75-3C24-6A1A-E5A9-A2D0D1EB359D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="inlcude\glad\KHR">
+      <UniqueIdentifier>{C4F7157D-B0F0-34CF-D922-1A54C57A14DB}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\glad\glad.h">
+      <Filter>include\glad</Filter>
+    </ClInclude>
+    <ClInclude Include="inlcude\glad\KHR\khrplatform.h">
+      <Filter>inlcude\glad\KHR</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\glad.c">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
