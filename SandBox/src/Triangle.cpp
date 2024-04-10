@@ -1,9 +1,13 @@
 #include "Triangle.h"
+#include "string"
+
 glm::vec4 Triangle::m_Color = { 1.0f, 0.0f, 0.0f, 1.0f };
+Hazel::Ref<Hazel::Texture> Triangle::m_Texture ;
+
 Triangle::Triangle(float position)
 {
 	m_Position = position;
-	m_Texture = Hazel::Texture::Create("assets/texture/Triangle.png");
+	//m_Texture = Hazel::Texture::Create("assets/texture/Triangle.png");
 	// position of the gate to pass
 	glm::vec2 widthG;
 	// Get Position of the gate to pass top and botom triangle

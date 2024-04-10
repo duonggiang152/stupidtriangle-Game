@@ -1,1 +1,2 @@
-﻿  Glad.vcxproj -> D:\smallproject\game engine\Hazel\Hazel\vendor\Glad\bin\Debug-windows-x86_64\Glad\Glad.lib
+﻿  glad.c
+  Glad.vcxproj -> D:\hazel\stupidtriangle-Game\Hazel\vendor\Glad\bin\Debug-windows-x86_64\Glad\Glad.lib

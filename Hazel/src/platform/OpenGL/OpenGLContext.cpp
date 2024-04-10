@@ -4,6 +4,7 @@
 #include "Hazel/Core.h"
 
 namespace Hazel {
+	bool OpenGLContext::isInited = false;
 	OpenGLContext::OpenGLContext(GLFWwindow* WindowHandle)
 	{
 		m_WindowHandle = WindowHandle;
@@ -13,10 +14,13 @@ namespace Hazel {
 	{
 		glfwMakeContextCurrent(m_WindowHandle);
 		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		if (status) OpenGLContext::isInited = true;
 		HZ_CORE_ASSERT(status, "Failed initialized OpenGL");
 	}
 	void OpenGLContext::SwapBuffer()
 	{
 		glfwSwapBuffers(m_WindowHandle);
 	}
+
+	
 }

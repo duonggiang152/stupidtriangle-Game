@@ -19,6 +19,7 @@ public:
 
 	void Remove(float backstrike) { m_Position = m_Position - backstrike; }
 	static void SetColor(glm::vec4 color) { m_Color = color; }
+	static Hazel::Ref<Hazel::Texture> m_Texture;
 private:
 	void DrawTriangle(float position, float toptop, float bottomtop);
 private:
@@ -33,7 +34,7 @@ private:
 	glm::vec2 m_PosBottom;
 	
 	static glm::vec4 m_Color;
-	Hazel::Ref<Hazel::Texture> m_Texture;
+	
 };
 class Random
 {

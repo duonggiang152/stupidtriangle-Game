@@ -6,6 +6,7 @@ void Level::Init()
 	m_Camera = std::make_unique<Hazel::OrthographicCamera>(-75.0f, 75.0f, -50.0f, 50.0f);
 	m_Camera->SetPosition(m_CameraPosition);
 	m_PlayerShip.SetShipSpeed(m_SpeedCamera);
+	Triangle::m_Texture = Hazel::Texture::Create("assets/texture/Triangle.png");
 	Triangle Frist = Triangle(50.0f);
 	m_Tlib.Push(Frist);
 	ImGuiIO io = ImGui::GetIO();

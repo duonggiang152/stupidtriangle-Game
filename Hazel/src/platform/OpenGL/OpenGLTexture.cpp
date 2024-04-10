@@ -2,6 +2,8 @@
 #include "OpenGLTexture.h"
 #include "glad/glad.h"
 #include "stb_image.h"
+#include "OpenGLContext.h"
+
 namespace Hazel {
 	OpenGLTexture2D::OpenGLTexture2D(uint32_t width, uint32_t height)
 		:m_Width(width), m_Height(height)
@@ -25,9 +27,11 @@ namespace Hazel {
 		stbi_set_flip_vertically_on_load(1);
 		stbi_uc* data = nullptr;
 		{
+		
 			HZ_CORE_TRACE("stbi_load - OpenGLTexture2D::OpenGLTexture2D({0})", path);
 			data = stbi_load(path.c_str(), &width, &height, &channels, 0);
 		}
+		
 		HZ_CORE_ASSERT(data, "Failed to load image!");
 		m_Width = width;
 		m_Height = height;
@@ -46,7 +50,7 @@ namespace Hazel {
 		m_DataFormat = dataFormat;
 		m_InternalFormat = internalFormat;
 		HZ_CORE_ASSERT(internalFormat & dataFormat, "Format not supported!");
-
+		
 		glCreateTextures(GL_TEXTURE_2D, 1, &m_RendererID);
 		glTextureStorage2D(m_RendererID, 1, internalFormat, m_Width, m_Height);
 
