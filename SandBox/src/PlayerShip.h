@@ -23,6 +23,6 @@ private:
 	float m_Gravity = -30.5f;
 	float m_Rotate = 6.0f;
 	float m_Speed;
-	Hazel::Ref<Hazel::Texture> m_Particletexture;
+
 	std::vector<Paricle> m_Particlelib;
 };

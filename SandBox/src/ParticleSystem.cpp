@@ -1,7 +1,7 @@
 #include "ParticleSystem.h"
 
 
-Paricle::Paricle(glm::vec2 pos, Hazel::Ref<Hazel::Texture> texture)
+Paricle::Paricle(glm::vec2 pos)
 	:m_Pos(pos)
 {
 	m_TexturePosLib.push_back({ m_Pos.x, m_Pos.y + 1 });

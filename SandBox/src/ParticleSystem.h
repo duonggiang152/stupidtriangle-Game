@@ -3,7 +3,7 @@
 class Paricle
 {
 public:
-	Paricle(glm::vec2 pos, Hazel::Ref<Hazel::Texture> texture);
+	Paricle(glm::vec2 pos);
 	void OnUpdate(Hazel::TimeStep ts);
 	void Draw();
 	

@@ -15,7 +15,7 @@ void PlayerShip::OnUpdate(Hazel::TimeStep ts)
 	{
 		if (m_Time.Tonow() > 0.1)
 		{
-			m_Particlelib.push_back(Paricle(m_Position, m_Particletexture));
+			m_Particlelib.push_back(Paricle(m_Position));
 			float temp = m_Time.CurrentTime();
 			m_Time.SetTimeStart(temp);
 		}
