@@ -1,4 +1,4 @@
-# game
+# Triangle - Game (follow tutorial of the chernol)
 Game Engine Architecture
 ![image](https://github.com/user-attachments/assets/18e6f395-4b3c-4778-b852-39c97275b71e)
 
