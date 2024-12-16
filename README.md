@@ -4,7 +4,7 @@
 <space><space>
 
 
-Game Engine Architecture
+# Game Engine Architecture
 
 
 <space><space>
@@ -22,12 +22,14 @@ It contain multiple layer which can represent for rendering different thing.
 For example in this game, I have a single layer for rendering. But we can seperate different layer for rendering background, rendering other background, NPC, ... 
 
 
+
+
+<space><space>
+# Event Architecture
+
+
 <space><space>
 ![image](https://github.com/user-attachments/assets/2ae45205-6b56-433d-8e5e-caad5c279bec)
-
-
-<space><space>
-Event Architecture
 
 
 <space><space>
