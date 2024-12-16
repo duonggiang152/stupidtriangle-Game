@@ -5,3 +5,7 @@ Game Engine Architecture
 Application is class which control very thing inside a signle window. You can extend this class to modify your own class.
 It contain multiple layer which can represent for rendering different thing.
 For example in this game, I have a single layer for rendering. But we can seperate different layer for rendering background, rendering other background, NPC, ... 
+![image](https://github.com/user-attachments/assets/2ae45205-6b56-433d-8e5e-caad5c279bec)
+Event Architecture
+Window abstract class is the interface that helps engine can adapt with multiple platform: windows, linux, mac ...
+Depend on the platform multiple concreate class will be create. It make platform code dependent with game logic code
