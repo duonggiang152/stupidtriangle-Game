@@ -14,7 +14,7 @@
 
 
 <space><space>
-Application is class which control very thing inside a signle window. You can extend this class to modify your own class.
+Application class control very thing inside a window. You can extend this class to modify your own class.
 It contain multiple layer which can represent for rendering different thing.
 
 
